@@ -1,49 +1,49 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
-  BookCheck,
-  ChartPie,
-  FolderSync,
-  Goal,
+  Calendar,
   Users,
-  Zap,
+  ShoppingCart,
+  Package,
+  Heart,
+  BarChart3,
 } from "lucide-react";
 
 const features = [
   {
-    icon: Goal,
-    title: "Identify Opportunities",
-    description:
-      "Easily uncover untapped areas to explore and expand your reach effortlessly.",
-  },
-  {
-    icon: BookCheck,
-    title: "Build Authority",
-    description:
-      "Create valuable content that resonates, inspires trust, and positions you as an expert.",
-  },
-  {
-    icon: ChartPie,
-    title: "Instant Insights",
-    description:
-      "Gain immediate, actionable insights with a quick glance, enabling fast decision-making.",
-  },
-  {
     icon: Users,
-    title: "Engage with Your Audience",
+    title: "Gestión de Clientes y Mascotas",
     description:
-      "Boost audience engagement with interactive features like polls, quizzes, and forms.",
+      "Administra fácilmente la información de clientes y sus mascotas, incluyendo historiales médicos completos y datos de contacto.",
   },
   {
-    icon: FolderSync,
-    title: "Automate Your Workflow",
+    icon: Calendar,
+    title: "Citas con Kanban",
     description:
-      "Streamline your processes by automating repetitive tasks, saving time and reducing effort.",
+      "Organiza y gestiona citas veterinarias con un sistema kanban visual intuitivo, optimizando el flujo de trabajo diario.",
   },
   {
-    icon: Zap,
-    title: "Accelerate Growth",
+    icon: ShoppingCart,
+    title: "Punto de Venta (POS)",
     description:
-      "Supercharge your growth by implementing strategies that drive results quickly and efficiently.",
+      "Sistema POS integrado para procesar ventas de medicamentos, alimentos y productos veterinarios de manera eficiente.",
+  },
+  {
+    icon: Package,
+    title: "Gestión de Inventario",
+    description:
+      "Control completo del inventario con seguimiento de entradas y salidas de mercancía, niveles de stock y alertas automáticas.",
+  },
+  {
+    icon: Heart,
+    title: "Atención Veterinaria Integral",
+    description:
+      "Herramientas especializadas para el cuidado de mascotas, incluyendo registro de tratamientos y seguimiento médico.",
+  },
+  {
+    icon: BarChart3,
+    title: "Reportes y Análisis",
+    description:
+      "Genera reportes detallados sobre ventas, inventario, citas y rendimiento de la clínica para tomar decisiones informadas.",
   },
 ];
 
@@ -54,7 +54,7 @@ const Features = () => {
       className="max-w-(--breakpoint-xl) mx-auto w-full py-12 xs:py-20 px-6"
     >
       <h2 className="text-3xl xs:text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight sm:max-w-xl sm:text-center sm:mx-auto">
-        Boost Your Strategy with Smart Features
+        Potencia tu Clínica Veterinaria con Funciones Inteligentes
       </h2>
       <div className="mt-8 xs:mt-14 w-full mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
         {features.map((feature) => (

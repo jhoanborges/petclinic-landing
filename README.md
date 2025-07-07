@@ -1,23 +1,24 @@
-# Beautiful Shadcn UI Landing Page
+# petClinic - Sistema de Gestión Veterinaria
 
-A modern, responsive landing page template built with Next.js, Tailwind CSS, and Shadcn UI, and Shadcn UI Blocks.
+Una solución completa de administración veterinaria construida con Next.js, Tailwind CSS, y Shadcn UI. Sistema integral para clínicas veterinarias que incluye gestión de clientes, mascotas, citas, POS e inventario.
 
-## Demo
+## Características Principales
 
-[Live Demo](https://shadcn-ui-landing-page.vercel.app/)
+🐕 **Gestión de Clientes y Mascotas** - Administra información completa de clientes y sus mascotas con historial médico
+📅 **Citas con Kanban** - Sistema visual de organización de citas veterinarias con tablero kanban
+🛒 **Punto de Venta (POS)** - Sistema POS integrado para ventas de medicamentos y productos veterinarios
+📦 **Gestión de Inventario** - Control completo con seguimiento de entradas y salidas de mercancía
+🏥 **Atención Veterinaria Integral** - Herramientas especializadas para el cuidado de mascotas
+📊 **Reportes y Análisis** - Dashboards y reportes detallados para toma de decisiones
 
-## Preview
+## Tecnologías
 
-![Preview](./public/page-preview.png)
-
-## Features
-
-- 🎨 Modern and clean design
-- 📱 Fully responsive layout
 - 🎯 Built with Next.js 15
-- 💅 Styled with Tailwind CSS `3.4` & `4.0`
-- 🧩 Built with [Shadcn UI](https://ui.shadcn.com) and [Shadcn UI Blocks](https://shadcnui-blocks.com)
+- 💅 Styled with Tailwind CSS v4.0
+- 🧩 Built with [Shadcn UI](https://ui.shadcn.com)
 - 🌙 Dark mode support
+- 📱 Fully responsive layout
+- 🎨 Modern and clean design
 
 ## Getting Started
 
@@ -57,9 +58,41 @@ npm run dev
 2. Modify the text and styles in the components to match your brand and messaging.
 3. Add your own features and sections as needed.
 
-## Why this template?
+## Módulos del Sistema
 
-This project is a base template for a landing page. It is built with Next.js, Tailwind CSS, Shadcn UI, and Shadcn UI Blocks. It is a great starting point for a landing page. You can customized the content and media files as per your needs. It is not intended to be a complete solution for a landing page. It is intended to be a starting point for a landing page.
+### 1. Gestión de Clientes y Mascotas
+- Registro completo de clientes
+- Perfiles detallados de mascotas
+- Historial médico y vacunas
+- Información de contacto y seguimiento
+
+### 2. Sistema de Citas
+- Tablero kanban visual
+- Programación y reprogramación
+- Estados de citas (pendiente, en progreso, completada)
+- Recordatorios automáticos
+
+### 3. Punto de Venta (POS)
+- Procesamiento de pagos
+- Venta de medicamentos y productos
+- Generación de recibos y facturas
+- Integración con inventario
+
+### 4. Gestión de Inventario
+- Control de stock en tiempo real
+- Entradas y salidas de mercancía
+- Alertas de stock bajo
+- Gestión de proveedores
+
+### 5. Reportes y Análisis
+- Reportes de ventas y facturación
+- Análisis de inventario
+- Estadísticas de citas y clientes
+- Dashboards con métricas importantes
+
+## Acerca del Proyecto
+
+petClinic es un sistema completo de gestión veterinaria diseñado para optimizar las operaciones de clínicas veterinarias. Proporciona todas las herramientas necesarias para gestionar clientes, mascotas, citas, inventario y ventas en una sola plataforma integrada.
 
 ## Contributing
 

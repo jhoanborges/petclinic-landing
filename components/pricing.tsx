@@ -6,48 +6,60 @@ import { CircleCheck } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    price: 19,
+    name: "FREE",
+    price: 0,
+    currency: "MXN",
+    period: "por siempre",
     description:
-      "Get 20 AI-generated portraits with 2 unique styles and filters.",
+      "Plan básico ideal para veterinarios independientes que están comenzando su práctica.",
     features: [
-      "5 hours turnaround time",
-      "20 AI portraits",
-      "Choice of 2 styles",
-      "Choice of 2 filters",
-      "2 retouch credits",
+      "Hasta 50 clientes y mascotas",
+      "Registro de citas básico",
+      "Acceso limitado al POS",
+      "Soporte por email básico",
+      "Almacenamiento de 1GB",
     ],
-    buttonText: "Get 20 portraits in 5 hours",
+    buttonText: "Comenzar Gratis",
   },
   {
-    name: "Advanced",
-    price: 29,
+    name: "STANDARD",
+    price: 1499,
+    currency: "MXN",
+    period: "por mes",
     isRecommended: true,
     description:
-      "Get 50 AI-generated portraits with 5 unique styles and filters.",
+      "Plan completo con todas las funciones principales para clínicas veterinarias medianas.",
     features: [
-      "3 hours turnaround time",
-      "50 AI portraits",
-      "Choice of 5 styles",
-      "Choice of 5 filters",
-      "5 retouch credits",
+      "Clientes y mascotas ilimitados",
+      "Sistema kanban completo para citas",
+      "POS avanzado con inventario",
+      "Gestión completa de inventario",
+      "Reportes básicos",
+      "Soporte por email prioritario",
+      "Almacenamiento de 50GB",
     ],
-    buttonText: "Get 50 portraits in 3 hours",
+    buttonText: "Elegir Standard",
     isPopular: true,
   },
   {
-    name: "Premium",
-    price: 49,
+    name: "GOLD",
+    price: 2500,
+    currency: "MXN",
+    period: "por mes",
     description:
-      "Get 100 AI-generated portraits with 10 unique styles and filters.",
+      "Plan premium con funciones avanzadas y soporte prioritario para clínicas grandes.",
     features: [
-      "1-hour turnaround time",
-      "100 AI portraits",
-      "Choice of 10 styles",
-      "Choice of 10 filters",
-      "10 retouch credits",
+      "Todo lo incluido en Standard",
+      "Reportes avanzados y analytics",
+      "Módulos de facturación automática",
+      "Integración con sistemas externos",
+      "API completa para desarrolladores",
+      "Soporte telefónico prioritario",
+      "Capacitación personalizada",
+      "Almacenamiento ilimitado",
+      "Respaldos automáticos diarios",
     ],
-    buttonText: "Get 100 portraits in 1 hour",
+    buttonText: "Elegir Gold",
   },
 ];
 
@@ -55,8 +67,11 @@ const Pricing = () => {
   return (
     <div id="pricing" className="max-w-(--breakpoint-lg) mx-auto py-12 xs:py-20 px-6">
       <h1 className="text-4xl xs:text-5xl font-bold text-center tracking-tight">
-        Pricing
+        Planes y Precios
       </h1>
+      <p className="mt-4 text-center text-lg text-muted-foreground max-w-2xl mx-auto">
+        Elige el plan que mejor se adapte a las necesidades de tu clínica veterinaria
+      </p>
       <div className="mt-8 xs:mt-14 grid grid-cols-1 lg:grid-cols-3 items-center gap-8 lg:gap-0">
         {plans.map((plan) => (
           <div
@@ -71,11 +86,17 @@ const Pricing = () => {
           >
             {plan.isPopular && (
               <Badge className="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2">
-                Most Popular
+                Más Popular
               </Badge>
             )}
             <h3 className="text-lg font-medium">{plan.name}</h3>
-            <p className="mt-2 text-4xl font-bold">${plan.price}</p>
+            <div className="mt-2 flex items-baseline gap-1">
+              <span className="text-4xl font-bold">
+                ${plan.price.toLocaleString()}
+              </span>
+              <span className="text-lg text-muted-foreground">{plan.currency}</span>
+            </div>
+            <p className="text-sm text-muted-foreground">{plan.period}</p>
             <p className="mt-4 font-medium text-muted-foreground">
               {plan.description}
             </p>
@@ -84,7 +105,7 @@ const Pricing = () => {
               {plan.features.map((feature) => (
                 <li key={feature} className="flex items-start gap-2">
                   <CircleCheck className="h-4 w-4 mt-1 text-green-600" />
-                  {feature}
+                  <span className="text-sm">{feature}</span>
                 </li>
               ))}
             </ul>

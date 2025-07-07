@@ -9,45 +9,47 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Beautiful Shadcn UI Landing Page",
+  title: `${process.env.NEXT_PUBLIC_APP_NAME} - Sistema de Gestión Veterinaria`,
   description:
-    "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+    "Sistema integral de administración veterinaria para la gestión completa de clínicas. Gestión de clientes, mascotas, citas con kanban, POS, inventario y reportes en una sola plataforma.",
   keywords: [
-    "Shadcn UI Landing Page",
-    "Shadcn UI Blocks",
-    "Shadcn UI",
-    "Landing Page",
-    "Tailwind CSS Landing Page",
-    "Beautiful Shadcn UI Landing Page",
-    "Next.js 15 Landing Page",
-    "Simple Landing Page",
-    "Landing Page Template",
-    "Landing Page Design",
+    "sistema veterinario",
+    "gestión clínica veterinaria",
+    "software veterinario",
+    "POS veterinario",
+    "inventario veterinario",
+    "citas veterinarias",
+    "gestión mascotas",
+    "administración veterinaria",
+    "kanban veterinario",
+    "petClinic",
+    "sistema integral veterinario",
+    "clínica veterinaria software",
   ],
   openGraph: {
     type: "website",
-    siteName: "Shadcn Landing Page",
-    locale: "en_US",
-    url: "https://shadcn-landing-page.vercel.app",
-    title: "Shadcn Landing Page",
+    siteName: `${process.env.NEXT_PUBLIC_APP_NAME} - Sistema Veterinario`,
+    locale: "es_ES",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "https://petclinic.com",
+    title: `${process.env.NEXT_PUBLIC_APP_NAME} - Sistema de Gestión Veterinaria`,
     description:
-      "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+      "Sistema integral de administración veterinaria. Gestión de clientes, mascotas, citas con kanban, POS, inventario y reportes para clínicas veterinarias.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Shadcn UI Landing Page Preview",
+        alt: `${process.env.NEXT_PUBLIC_APP_NAME} - Sistema de Gestión Veterinaria`,
       },
     ],
   },
   authors: [
     {
-      name: "Akash Moradiya",
-      url: "https://shadcnui-blocks.com",
+      name: "petClinic Team",
+      url: process.env.NEXT_PUBLIC_BASE_URL || "https://petclinic.com",
     },
   ],
-  creator: "Akash Moradiya",
+  creator: "petClinic Team",
   icons: [
     {
       rel: "icon",
@@ -95,7 +97,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <body className={`${geistSans.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

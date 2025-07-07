@@ -9,34 +9,44 @@ import { PlusIcon } from "lucide-react";
 
 const faq = [
   {
-    question: "What is your return policy?",
+    question: "¿Cuáles son los planes de precios disponibles?",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "Tenemos tres planes: FREE ($0 MXN) con funciones básicas, STANDARD ($1,499 MXN/mes) con todas las funciones principales, y GOLD ($2,500 MXN/mes) con funciones avanzadas y soporte premium para clínicas veterinarias grandes.",
   },
   {
-    question: "How do I track my order?",
+    question: "¿Qué incluye el plan FREE?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "El plan FREE incluye gestión básica de hasta 50 clientes y mascotas, registro de citas básico, y acceso limitado al sistema POS. Ideal para veterinarios independientes que están empezando.",
   },
   {
-    question: "Do you ship internationally?",
+    question: "¿En qué se diferencia el plan STANDARD del FREE?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "El plan STANDARD ($1,499 MXN/mes) incluye clientes ilimitados, sistema kanban completo para citas, POS avanzado, gestión completa de inventario, reportes básicos y soporte por email.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "¿Qué beneficios adicionales tiene el plan GOLD?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "El plan GOLD ($2,500 MXN/mes) incluye todo lo del plan Standard más: reportes avanzados y analytics, módulos de facturación automática, integración con sistemas externos, soporte telefónico prioritario y capacitación personalizada.",
   },
   {
-    question: "What if I receive a damaged item?",
+    question: "¿Puedo cambiar de plan en cualquier momento?",
     answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+      "Sí, puedes actualizar o cambiar tu plan en cualquier momento desde tu panel de administración. Los cambios se aplicarán inmediatamente y se prorratearán en tu siguiente factura.",
   },
   {
-    question: "How can I contact customer support?",
+    question: "¿Cómo funciona el sistema de inventario?",
     answer:
-      "You can reach our support team via email at support@example.com or through the live chat on our website. We're available 24/7 to assist you.",
+      "El sistema de inventario permite registrar entradas y salidas de productos, controlar stock en tiempo real, generar alertas de productos bajos, y gestionar proveedores. Está integrado con el POS para actualizaciones automáticas.",
+  },
+  {
+    question: "¿El sistema incluye soporte técnico?",
+    answer:
+      "Sí, todos los planes incluyen soporte técnico. El plan FREE tiene soporte por email básico, STANDARD incluye soporte por email prioritario, y GOLD incluye soporte telefónico y chat en vivo.",
+  },
+  {
+    question: "¿Mis datos están seguros en la plataforma?",
+    answer:
+      "Absolutamente. Utilizamos encriptación de datos, respaldos automáticos diarios, y cumplimos con las normas de protección de datos. Tu información de clientes y mascotas está completamente protegida.",
   },
 ];
 
@@ -47,10 +57,10 @@ const FAQ = () => {
       className="w-full max-w-(--breakpoint-xl) mx-auto py-8 xs:py-16 px-6"
     >
       <h2 className="md:text-center text-3xl xs:text-4xl md:text-5xl leading-[1.15]! font-bold tracking-tighter">
-        Frequently Asked Questions
+        Preguntas Frecuentes
       </h2>
       <p className="mt-1.5 md:text-center xs:text-lg text-muted-foreground">
-        Quick answers to common questions about our products and services.
+        Respuestas rápidas a preguntas comunes sobre nuestro sistema de gestión veterinaria.
       </p>
 
       <div className="min-h-[550px] md:min-h-[320px] xl:min-h-[300px]">
