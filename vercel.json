@@ -1,0 +1,9 @@
+{
+    "build": {
+      "env": {
+        "YARN_VERSION": "4.9.2",
+        "ENABLE_EXPERIMENTAL_COREPACK": "1"
+      }
+    },
+    "installCommand": "corepack enable && yarn install"
+  }
